@@ -1,0 +1,115 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/css3";
+
+$bodytext: "Merriweather Sans";
+$headertext: "Lato";
+$linkcolor: #9c9c9c;
+$bordertext: #c9c9c9;
+$republicancolor: #851515;
+$democratcolor: #153885;
+$independentcolor: #4f4f4f;
+
+p {
+	font-family: $bodytext, sans-serif;
+	font-size: 14pt;
+	padding: 15px 0;
+}
+
+li {
+	font-family: $bodytext, sans-serif;
+	list-style: none;
+	font-size: 18pt;
+}
+
+ul {
+	padding: 0;
+}
+
+h1 {
+	font-family: $headertext, sans-serif;
+	font-weight: 600;
+	font-size: 40pt;
+}
+
+h2 {
+	font-family: $headertext, sans-serif;
+	margin: 20px 0 10px 0;
+	font-weight: 600;
+	color: #404040;
+}
+
+a.contact {
+	padding: 0 5px;
+	margin-bottom: 2px;
+}
+
+label, button, input {
+	font-family: $headertext, sans-serif;
+	font-size: 12pt;
+	font-weight: 700;
+}
+
+input {
+	margin: 10px 0;
+}
+
+.form-horizontal label.control-label {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.container {
+	width: 720px;
+}
+
+@media only screen
+and (max-width : 719px) {
+	.container {
+		width: 100%;
+		padding: 0 15px;
+	}
+	li {
+		font-size: 14pt;
+	}
+	.form-horizontal label.control-label {
+	margin: 0px;
+}
+}
+
+header#top-header {
+	margin: 40px 0;
+}
+
+section {
+	border-bottom: 2px solid $bordertext;
+	border-top: 2px solid $bordertext;
+	margin-bottom: 40px;
+}
+
+.senate.democrat {
+	color: $democratcolor;
+}
+
+.senate.republican {
+	color: $republicancolor;
+}
+
+senate.independent {
+	color: $independentcolor;
+}
+
+.house.democrat {
+	color: tint($democratcolor, 30%);
+}
+
+.house.republican {
+	color: tint($republicancolor, 30%);
+}
+
+house.independent {
+	color: tint($independentcolor, 30%);
+}
